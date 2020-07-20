@@ -3,7 +3,7 @@ html {
 }
 
 .bg-cust-nav {
-    background-color: rgba($wc-1, 0.75)!important;
+    background-color: rgba($wc-1, 0.95)!important;
     z-index: 5555;
 }
 
@@ -258,13 +258,19 @@ section {
     z-index: 5555;
 }
 
-.whatsapp {
+.whatsapp-get-a-quote {
     position: fixed;
-    width: 50px;
-    height: 50px;
     right: 0;
-    background: $wc-1;
     top: 50%;
     transform: translateY(-50%);
     z-index: 5555;
+    .whatsapp {
+        width: 50px;
+        height: 50px;
+        background: $wc-1;
+    }
+    .quote {
+        width: 50px;
+        background: $wc-1;
+    }
 }

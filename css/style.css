@@ -214,7 +214,7 @@ html {
 }
 
 .bg-cust-nav {
-  background-color: rgba(17, 20, 27, 0.75) !important;
+  background-color: rgba(17, 20, 27, 0.95) !important;
   z-index: 5555;
 }
 
@@ -509,15 +509,21 @@ section.footer a:hover {
   z-index: 5555;
 }
 
-.whatsapp {
+.whatsapp-get-a-quote {
   position: fixed;
-  width: 50px;
-  height: 50px;
   right: 0;
-  background: #11141b;
   top: 50%;
   transform: translateY(-50%);
   z-index: 5555;
+}
+.whatsapp-get-a-quote .whatsapp {
+  width: 50px;
+  height: 50px;
+  background: #11141b;
+}
+.whatsapp-get-a-quote .quote {
+  width: 50px;
+  background: #11141b;
 }
 
 /*# sourceMappingURL=style.css.map */
