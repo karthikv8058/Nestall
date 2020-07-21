@@ -22,6 +22,11 @@
   background-color: #262533 !important;
 }
 
+.theme-over:hover {
+  background-color: #f9cc41 !important;
+  border: 1px solid #f9cc41 !important;
+}
+
 /*==================== fonts ===================*/
 /*===================== font sizes ================*/
 /*=================== screen sizes ================*/

@@ -31,6 +31,13 @@ $white:#fff;
     background-color: #262533!important;
 }
 
+.theme-over {
+    &:hover {
+        background-color: $wc-2!important;
+        border: 1px solid $wc-2!important;
+    }
+}
+
 
 /*==================== fonts ===================*/
 
