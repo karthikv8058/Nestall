@@ -27,6 +27,12 @@ h5 {
     @include screen-font(h5, lg, md, sm);
 }
 
+.logo {
+    @include screen-to(xs) {
+        width: 35px!important;
+    }
+}
+
 .overflow-img {
     overflow: hidden;
     img {
@@ -72,10 +78,15 @@ h5 {
 
 section {
     &.land-section {
-        background: url(#{$img-path}bg-home.jpg) no-repeat center;
+        // background: url(#{$img-path}bg-home.jpg) no-repeat center;
         background-size: cover;
         position: relative;
         z-index: 1;
+        overflow: hidden;
+        height: 82vh!important;
+        @include screen-to(sm) {
+            height: auto!important;
+        }
         &::after {
             display: block;
             content: '';
@@ -90,11 +101,29 @@ section {
         .banner-text {
             position: absolute;
             left: 0;
-            bottom: 50px;
+            bottom: 30%;
+            z-index: 555;
             .box {
                 max-width: 350px;
+                background: rgba($wc-1, 0.9)!important;
             }
         }
+        .owl-theme .owl-nav {
+            position: absolute;
+            top: 60%;
+            z-index: 5555;
+            width: 100%;
+        }
+        // .owl-carousel .owl-nav button.owl-next,
+        // .owl-carousel .owl-nav button.owl-prev {
+        //     position: absolute;
+        // }
+        // .owl-carousel .owl-nav button.owl-next {
+        //     right: 10px;
+        // }
+        // .owl-carousel .owl-nav button.owl-prev {
+        //     left: 10px;
+        // }
     }
     &.latest-updates {
         .update {
@@ -129,7 +158,7 @@ section {
         }
         .bottom {}
         .about-text {
-            padding: 150px 100px!important;
+            padding: 100px 80px!important;
             @include screen-to(md) {
                 padding: 30px 15px!important;
             }
@@ -248,6 +277,12 @@ section {
     }
 }
 
+.contact-inner {
+     ::placeholder {
+        color: $white!important;
+    }
+}
+
 .arrow-top {
     position: fixed;
     width: 50px;
@@ -263,7 +298,7 @@ section {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 5555;
+    z-index: 55;
     .whatsapp {
         width: 50px;
         height: 50px;
@@ -272,5 +307,29 @@ section {
     .quote {
         width: 50px;
         background: $wc-1;
+    }
+}
+
+.inner-banner {
+    height: 50vh;
+    overflow: hidden;
+    @include screen-to(md) {
+        height: auto!important;
+    }
+    .owl-theme .owl-nav {
+        position: absolute;
+        top: 50%;
+        z-index: 5555;
+        width: 100%;
+    }
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel .owl-nav button.owl-prev {
+        position: absolute;
+    }
+    .owl-carousel .owl-nav button.owl-next {
+        right: 10px;
+    }
+    .owl-carousel .owl-nav button.owl-prev {
+        left: 10px;
     }
 }

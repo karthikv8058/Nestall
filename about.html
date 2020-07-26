@@ -52,9 +52,20 @@
             </div>
         </div>
     </nav>
-    <section class="p-0">
-        <div>
-            <img src="img/banner-inner.jpg" width="100%" class="img-block" alt="">
+    <section class="p-0 inner-banner">
+        <div class="banner owl-carousel owl-theme w-100 p-0 m-0">
+            <div class="item w-100">
+                <img src="img/banners/about/1.jpg" width="100%" class="img-fluid" alt="">
+            </div>
+            <div class="item w-100">
+                <img src="img/banners/about/2.jpg" width="100%" class="img-fluid" alt="">
+            </div>
+            <div class="item w-100">
+                <img src="img/banners/about/3.jpg" width="100%" class="img-fluid" alt="">
+            </div>
+            <div class="item w-100">
+                <img src="img/banners/about/4.jpg" width="100%" class="img-fluid" alt="">
+            </div>
         </div>
     </section>
     <section class="about-inner bg-theme">
@@ -62,36 +73,36 @@
 
             <div data-aos="fade-in" data-aos-easing="ease-in-out " data-aos-duration="1200">
                 <h4 class="text-capitalize text-yellow">About Us</h4>
-                <p class="text-white-50">
+                <p class="text-white-50 text-justify">
                     We Nestall Homes &amp; Interiors Pvt Ltd is a Kochi based turnkey Interior Decoration &amp; Construction contracting company, a team of passionate experts with a glowing flair of creativity and innovation in our domain. Being one of the trendsetters in
                 </p>
-                <p class="text-white-50"> the industry, we offer a wide range of architecture, Interior &amp; Exterior Designs and execution, landscaping, Renovation &amp; MEP Services etc. Our constantly evolving team of engineers and designers kept us stronger and delivering
+                <p class="text-white-50 text-justify"> the industry, we offer a wide range of architecture, Interior &amp; Exterior Designs and execution, landscaping, Renovation &amp; MEP Services etc. Our constantly evolving team of engineers and designers kept us stronger and delivering
                     the projects ahead of schedule with excellent quality within the budget.
                 </p>
             </div>
             <div data-aos="fade-in" data-aos-easing="ease-in-out " data-aos-duration="1200">
                 <h4 class="text-capitalize text-yellow">Our Approach</h4>
 
-                <p class="text-white-50">
+                <p class="text-white-50 text-justify">
                     Most of the design is derived based on the customer’s taste, lifestyle, requirement, budget &amp; time, we only add life into it with our innovative ideas for the enhancement. Nestall design process revolves around connection and collaboration with its
                 </p>
-                <p class="text-white-50">
+                <p class="text-white-50 text-justify">
                     clients, learning about their lives and how they envision themselves in their homes by asking the right questions, listening and serving as their companion in the process has proven to be our winning edge.
                 </p>
             </div>
             <div data-aos="fade-in" data-aos-easing="ease-in-out " data-aos-duration="1200">
                 <h4 class="text-capitalize text-yellow">Our Design</h4>
 
-                <p class="text-white-50">
+                <p class="text-white-50 text-justify">
                     Our team not only focus on overall aesthetics of their creation, but also on every detail that could impact the output while finding ways to make it feel fresh.
                 </p>
-                <p class="text-white-50">
+                <p class="text-white-50 text-justify">
                     The team views their projects both holistically and in the smallest detail. From colour and texture to material and quality, our aesthetic interweaves a multitude of elements that come together to form each space as a cohesive work of art.
                 </p>
-                <p class="text-white-50">
+                <p class="text-white-50 text-justify">
                     We always adept at blending exquisite fabrics, distinctive furniture and functional floor plans into a cohesive whole that enhances our client’s unique vision and emerge it vibrantly to their life with a style that is right for them.
                 </p>
-                <p class="text-white-50">
+                <p class="text-white-50 text-justify">
                     Be it contemporary, transitional or traditional, Nestall’s magical creativity will unfold its greatest impact on every space that matters.
                 </p>
             </div>
@@ -160,6 +171,22 @@
 
     <script>
         AOS.init();
+    </script>
+
+    <script>
+        $('.banner').owlCarousel({
+            items: 1,
+            animateIn: 'animate__fadeIn',
+            animateOut: 'animate__fadeOut',
+            loop: true,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 3500,
+            dots: false,
+            margin: 0,
+            slideTransition: 'linear',
+            navText: ["<i class='fa fa-chevron-left text-yellow'></i>", "<i class='fa fa-chevron-right text-yellow'></i>"]
+        });
     </script>
 </body>
 

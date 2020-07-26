@@ -156,6 +156,12 @@ section:after {
 
 .navbar-light .navbar-nav .nav-link {
   color: white;
+  font-size: 18px;
+}
+@media (max-width: 575.98px) {
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 15px;
+  }
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -293,6 +299,12 @@ h5 {
   }
 }
 
+@media (max-width: 575.98px) {
+  .logo {
+    width: 35px !important;
+  }
+}
+
 .overflow-img {
   overflow: hidden;
 }
@@ -331,10 +343,16 @@ h5 {
 }
 
 section.land-section {
-  background: url(../img/bg-home.jpg) no-repeat center;
   background-size: cover;
   position: relative;
   z-index: 1;
+  overflow: hidden;
+  height: 82vh !important;
+}
+@media (max-width: 767.98px) {
+  section.land-section {
+    height: auto !important;
+  }
 }
 section.land-section::after {
   display: block;
@@ -350,10 +368,18 @@ section.land-section::after {
 section.land-section .banner-text {
   position: absolute;
   left: 0;
-  bottom: 50px;
+  bottom: 30%;
+  z-index: 555;
 }
 section.land-section .banner-text .box {
   max-width: 350px;
+  background: rgba(17, 20, 27, 0.9) !important;
+}
+section.land-section .owl-theme .owl-nav {
+  position: absolute;
+  top: 60%;
+  z-index: 5555;
+  width: 100%;
 }
 section.latest-updates .update {
   position: relative;
@@ -388,7 +414,7 @@ section.about-caption {
   }
 }
 section.about-caption .about-text {
-  padding: 150px 100px !important;
+  padding: 100px 80px !important;
 }
 @media (max-width: 991.98px) {
   section.about-caption .about-text {
@@ -504,6 +530,10 @@ section.footer a:hover {
   }
 }
 
+.contact-inner ::placeholder {
+  color: #fff !important;
+}
+
 .arrow-top {
   position: fixed;
   width: 50px;
@@ -519,7 +549,7 @@ section.footer a:hover {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 5555;
+  z-index: 55;
 }
 .whatsapp-get-a-quote .whatsapp {
   width: 50px;
@@ -529,6 +559,32 @@ section.footer a:hover {
 .whatsapp-get-a-quote .quote {
   width: 50px;
   background: #11141b;
+}
+
+.inner-banner {
+  height: 50vh;
+  overflow: hidden;
+}
+@media (max-width: 991.98px) {
+  .inner-banner {
+    height: auto !important;
+  }
+}
+.inner-banner .owl-theme .owl-nav {
+  position: absolute;
+  top: 50%;
+  z-index: 5555;
+  width: 100%;
+}
+.inner-banner .owl-carousel .owl-nav button.owl-next,
+.inner-banner .owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+}
+.inner-banner .owl-carousel .owl-nav button.owl-next {
+  right: 10px;
+}
+.inner-banner .owl-carousel .owl-nav button.owl-prev {
+  left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
